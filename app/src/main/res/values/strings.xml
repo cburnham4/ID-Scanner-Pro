@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IdScanner</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="expires">Expires</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="required_age">Required Age</string>
+    <string name="age">Age</string>
+</resources>

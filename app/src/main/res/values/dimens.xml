@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="cv_title_size">20sp</dimen>
+    <dimen name="cv_text_size">14sp</dimen>
+
+    <dimen name="cv_item_padding">4dp</dimen>
+
+    <dimen name="margin_lr_desired_age">50dp</dimen>
+</resources>
