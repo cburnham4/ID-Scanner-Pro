@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, PDF417ScanActivity.class);
                 i.putExtra(PDF417ScanActivity.EXTRA_LICENSE_KEY, getString(R.string.scanner_key));
-
                 startActivityForResult(i, SCAN_ACTIVITY_CODE);
             }
         });
@@ -245,13 +244,19 @@ public class MainActivity extends AppCompatActivity {
                 }
             } else if (resultCode == PDF417ScanActivity.ERROR_INVALID_CAMERA_NUMBER) {
                 tvName.setText("Invalid camera number.");
+                Toast.makeText(this,"Invalid camera number.", Toast.LENGTH_SHORT ).show();
             } else if (resultCode == PDF417ScanActivity.ERROR_CAMERA_NOT_AVAILABLE) {
                 tvName.setText("Camera not available.");
+                Toast.makeText(this,"Camera not available.", Toast.LENGTH_SHORT ).show();
             } else if (resultCode == PDF417ScanActivity.ERROR_INVALID_CAMERA_ACCESS) {
                 tvName.setText("Invalid camera access.");
+                Toast.makeText(this,"Invalid camera access.", Toast.LENGTH_SHORT ).show();
             } else if (resultCode == PDF417ScanActivity.ERROR_INVALID_LICENSE_KEY) {
                 tvName.setText("Invalid license key.");
+                Toast.makeText(this,"Invalid license key.", Toast.LENGTH_SHORT ).show();
             }
+        }else{
+            Toast.makeText(MainActivity.this,"Scan Failed.", Toast.LENGTH_SHORT ).show();
         }
     }
 
