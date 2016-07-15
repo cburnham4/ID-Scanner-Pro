@@ -5,11 +5,11 @@ android {
     buildToolsVersion "24.0.0"
 
     defaultConfig {
-        applicationId "letshangllc.idscanner"
+        applicationId "letshangllc.idscannerpro"
         minSdkVersion 14
         targetSdkVersion 24
-        versionCode 3
-        versionName "1.11"
+        versionCode 4
+        versionName "1.13"
     }
     buildTypes {
         release {

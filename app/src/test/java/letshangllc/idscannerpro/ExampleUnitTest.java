@@ -1,4 +1,4 @@
-package letshangllc.idscanner;
+package letshangllc.idscannerpro;
 
 import org.junit.Test;
 
